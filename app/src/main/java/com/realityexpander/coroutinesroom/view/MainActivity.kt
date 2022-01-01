@@ -1,9 +1,9 @@
-package com.devtides.coroutinesroom.view
+package com.realityexpander.coroutinesroom.view
 
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.devtides.coroutinesroom.R
+import com.realityexpander.coroutinesroom.R
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.devtides.coroutinesroom
+package com.realityexpander.coroutinesroom
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

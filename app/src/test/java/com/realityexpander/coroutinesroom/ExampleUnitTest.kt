@@ -1,4 +1,4 @@
-package com.devtides.coroutinesroom
+package com.realityexpander.coroutinesroom
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

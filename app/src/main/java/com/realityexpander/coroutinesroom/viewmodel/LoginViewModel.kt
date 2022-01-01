@@ -1,4 +1,4 @@
-package com.devtides.coroutinesroom.viewmodel
+package com.realityexpander.coroutinesroom.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

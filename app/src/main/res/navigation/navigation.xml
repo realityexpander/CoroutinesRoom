@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.devtides.coroutinesroom.view.SignupFragment"
+        android:name="com.realityexpander.coroutinesroom.view.SignupFragment"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.devtides.coroutinesroom.view.LoginFragment"
+        android:name="com.realityexpander.coroutinesroom.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.devtides.coroutinesroom.view.MainFragment"
+        android:name="com.realityexpander.coroutinesroom.view.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action

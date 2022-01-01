@@ -1,4 +1,4 @@
-package com.devtides.coroutinesroom.view
+package com.realityexpander.coroutinesroom.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
-import com.devtides.coroutinesroom.R
-import com.devtides.coroutinesroom.viewmodel.SignupViewModel
+import com.realityexpander.coroutinesroom.R
+import com.realityexpander.coroutinesroom.viewmodel.SignupViewModel
 import kotlinx.android.synthetic.main.fragment_signup.*
 
 class SignupFragment : Fragment() {
