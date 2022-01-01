@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -12,6 +13,7 @@ import androidx.navigation.Navigation
 import com.realityexpander.coroutinesroom.R
 import com.realityexpander.coroutinesroom.viewmodel.LoginViewModel
 import kotlinx.android.synthetic.main.fragment_login.*
+import kotlinx.android.synthetic.main.fragment_signup.*
 
 class LoginFragment : Fragment() {
 
@@ -36,18 +38,24 @@ class LoginFragment : Fragment() {
 
     private fun observeViewModel() {
         viewModel.loginComplete.observe(this, Observer { isComplete ->
-
+            val action = LoginFragmentDirections.actionGoToMain()
+            Navigation.findNavController(loginBtn).navigate(action)
         })
 
         viewModel.error.observe(this, Observer { error ->
-
-
+            Toast.makeText(activity, "Error: $error", Toast.LENGTH_LONG).show()
         })
     }
 
     private fun onLogin(v: View) {
-        val action = LoginFragmentDirections.actionGoToMain()
-        Navigation.findNavController(v).navigate(action)
+        val username = loginUsername.text.toString().trim()
+        val password = loginPassword.text.toString().trim()
+
+        if (username.isEmpty() || password.isEmpty()) {
+            Toast.makeText(activity, "Please fill all fields", Toast.LENGTH_LONG ).show()
+        } else {
+            viewModel.login(username, password)
+        }
     }
 
     private fun onGotoSignup(v: View){
